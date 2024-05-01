@@ -10,9 +10,6 @@ public class MyCalculator
 		
 	}
 
-
-
-
 	public static void main(String args[]) {
 		
 		Scanner myObj = new Scanner(System.in);
@@ -21,7 +18,7 @@ public class MyCalculator
 		System.out.println("Hi " +input+ " below is the Answer for your querry");
 		
 		MyCalculator calc = new MyCalculator();
-		System.out.println("Sum is :"+calc.mul(20, 10));
+		System.out.println("Sum is :"+calc.mul(20,10));
 		
 	
 	}

@@ -10,6 +10,6 @@ public class NewTest {
 	  
 	  MyCalculator calc = new MyCalculator();
 	  
-	  	assertEquals(50,calc.mul(10,5));
+	  	assertEquals(5,calc.mul(10,5));
   }
 }

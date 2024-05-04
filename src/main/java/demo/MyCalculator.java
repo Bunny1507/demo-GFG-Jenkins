@@ -19,7 +19,7 @@ public class MyCalculator
 		
 		MyCalculator calc = new MyCalculator();
 		System.out.println("Sum is :"+calc.mul(20,10));
-		
+		System.out.println("Sum is :"+calc.mul(30,10));
 	
 	}
 

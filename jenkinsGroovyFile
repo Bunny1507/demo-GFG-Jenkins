@@ -1,62 +1,39 @@
-pipeline 
+pipeline
 {
 	agent any
 	tools
 	{
 		maven 'MAVEN_HOME'
 	}
-	
-	stages{
-		stage('Welcome Stage')
+	stages
+	{
+		stage('Welcome stage')
 		{
 			steps
-			{
-				echo 'Welcome to Jenkins Pipeline'
-			}			
+				{
+					echo 'Welcome to pipeline'
+				}
 		}
-		stage('Clean Stage')
+		stage('Clean stage')
 		{
 			steps
-			{
-				bat 'mvn clean'
-			}			
+				{
+					bat 'mvn clean'
+				}
 		}
-		stage('Test Stage')
+		stage('Build stage')
 		{
 			steps
-			{
-				bat 'mvn test'
-			}			
+				{
+					bat 'mvn install'
+				}
 		}
-		stage('Build Stage')
+		stage('Success stage')
 		{
 			steps
-			{
-				bat 'mvn install'
-			}			
+				{
+					echo 'Build Successfully completed'
+				}
 		}
-
-		stage('Success Stage')
-		{
-			steps
-			{
-				echo 'Successfully Build'
-			}			
-		}
-		stage('Final Stage')
-		{
-			steps
-			{
-				echo 'CICD Pipeline Successfully completed '
-			}			
-		}
-		stage('Java Version Stage')
-		{
-			steps
-			{
-				bat 'java --version'
-			}			
-		}
-	
 	}
 }

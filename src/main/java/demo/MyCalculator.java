@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class MyCalculator 
 {
-	int mul(int a, int b) {
+	public int mul(int a, int b) {
 		
 		return a*b;
 		

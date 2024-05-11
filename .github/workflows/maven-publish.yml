@@ -21,7 +21,7 @@ jobs:
       run: mvn -B package --file pom.xml
     - uses: mr-smithers-excellent/docker-build-push@v6
       with:
-        image: hkshitesh/mynewimg
+        image: sriramojumanikanta/mynewimg
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}

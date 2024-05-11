@@ -34,6 +34,13 @@
 			<version>7.8.0</version>
 		<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.docker-java/docker-java -->
+		<dependency>
+			<groupId>com.github.docker-java</groupId>
+			<artifactId>docker-java</artifactId>
+			<version>3.3.6</version>
+		</dependency>
+
 	</dependencies>
 	
 

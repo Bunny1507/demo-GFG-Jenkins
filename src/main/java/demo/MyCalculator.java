@@ -18,7 +18,7 @@ public class MyCalculator
 		System.out.println("Hi " +input+ " below is the Answer for your querry");
 		
 		MyCalculator calc = new MyCalculator();
-		System.out.println("Sum is :"+calc.mul(22,10));
+		System.out.println("Sum is :"+calc.mul(30,10));
 		System.out.println("Sum is :"+calc.mul(30,10));
 	
 	}
